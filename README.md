@@ -32,3 +32,6 @@ angular.module('yourApp', [
 	// ...
 ]);
 ```
+
+## How to use
+
