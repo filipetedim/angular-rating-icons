@@ -1,9 +1,9 @@
 # Angular-rating
 The first fully customizable AngularJS rating system that is as easy as it gets.
 
-Its best feature? It works with any icon from font-awesome, even if you want it 'half'!
+Its best feature? It works with any icon from font-awesome, even if you want to fill only half of it!
 
-[Live demo here](https://jsfiddle.net/filipetedim/0595783t/)!
+Check the [live demo here](https://jsfiddle.net/filipetedim/0595783t/) if you didn't understand!
 
 ## Table of contents
 
