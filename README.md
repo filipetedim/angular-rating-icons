@@ -91,6 +91,7 @@ Requested features list:
 * Add form validation to an attribute.
 * Add attribute for a new custom class to be added.
 * Add MaterializeCSS support.
+* Add reset functionality.
 
 ## Contributing
 
