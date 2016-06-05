@@ -8,6 +8,11 @@ Its best feature? It works with any icon from font-awesome, even if you want it 
 
 [Live demo here](https://jsfiddle.net/filipetedim/0595783t/)!
 
+## Table of contents
+
+* [Getting started](#getting-started)
+* [How to use](#how-to-use)
+
 ## Getting started
 
 Install the package using Bower:
