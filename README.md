@@ -78,9 +78,9 @@ There are a number of possible customizations to this directive. Bellow is a tab
 
 ### Customization
 
-You can fully customize the directive by downloading and changing the CSS file in `/src/angular-rating.css`. Be mindful that `decimal` type uses specific CSS to reduce the icons to half and position them properly next to their correspondent half. 
+You can fully customize the directive by downloading and changing the CSS file in `/src/angular-rating.css`. Be mindful that `decimal` type uses specific code to reduce the icons to half and position them properly next to their correspondent half. 
 
-Customizing the CSS is at the risk of malfunction of this directive.
+Customizing the CSS is at the risk of visual malfunction of this directive.
 
 ## Dependencies
 
