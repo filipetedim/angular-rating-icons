@@ -1,6 +1,3 @@
-# ON-GOING README
-coming soon™ in about 1 or 2 days, just reserving the name before I upload the files
-
 # Angular-rating
 The first fully customizable AngularJS rating system that is as easy as it gets.
 
