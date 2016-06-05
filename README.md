@@ -44,7 +44,37 @@ angular.module('yourApp', [
 
 ## How to use
 
+To get it runnig, just add one of the the blocks of HTML code bellow to your view. Don't forget that your model should be an object, as per [the ng-model golden dot rule](http://stackoverflow.com/questions/17606936/angularjs-dot-in-ng-model) to deal with scope inheritance.
+```html
+<angular-rating ng-model="YourObject.ratingValue"></angular-rating>
+
+<div angular-rating ng-model="YourObject.ratingValue"></div>
+
+<!-- Best practice: This is the most valid HTML code should you use any validation tool. -->
+<div data-angular-rating ng-model="YourObject.ratingValue"></div>
+```
+
 ### Attributes
+
+There are a number of possible customizations to this directive. Bellow is a table with all the latest version attributes and their information.
+
+| Attribute | Description | Type | Default |
+|---|---|---|---|
+| ng-model | (Required) Object  bound to control. | String, Number, Array | - |
+| max | Maximal value. | Integer | 5 |
+| default-value | Default value if model is undefined. | Integer | 0 |
+| on-change | Function executed every value change. | Function | - |
+| decimal | Whether or not icons should fill in halves.  | Boolean | false |
+| read-only | Whether or not is readonly. | Boolean | false |
+| icon-size | Size of the icons. | Integer | 20 |
+| icon-spacing | Spacing in pixels between the icons. | Integer | 5 |
+| icon-base | Base class for all icons. | String | 'fa' |
+| icon-empty | Icon class for empty icons. | String | 'fa-star-o' |
+| icon-full | Icon class for selected icons. This attribute has priority over the empty class.  | String | 'fa-star' |
+| icon-hover | Icon class for hovered icons. This attribute has the highest class priority. | String | 'fa-star' |
+| color-base | Base color for icons. | String | 'black' |
+| color-selected | Color for selected icons. This attribute has priority over the base color. | String | 'orange' |
+| color-hover | Color for hovered icons. This attribute has the highest color priority . | String | 'orange' |
 
 ### Customization
 
