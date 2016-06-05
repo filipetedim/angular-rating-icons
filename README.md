@@ -1,7 +1,7 @@
 # ON-GOING README
 coming soon™ in about 1 or 2 days, just reserving the name before I upload the files
 
-# Angular Rating
+# Angular-rating
 The first fully customizable AngularJS rating system that is as easy as it gets.
 
 Its best feature? It works with any icon from font-awesome, even if you want it 'half'!
@@ -58,4 +58,10 @@ angular.module('yourApp', [
 
 ## Versioning
 
+Angular-rating is maintained under the [Semantic Versioning guidelines](http://semver.org/).
+
+See the [Releases section of this GitHub project](https://github.com/filipetedim/angular-rating/releases/) for changelogs for each release.
+
 ## License
+
+Code and documentation copyright 2016 filipetedim © Filipe Tedim. Code released under [the MIT license](https://github.com/filipetedim/angular-rating/blob/master/LICENSE).
