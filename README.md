@@ -13,6 +13,7 @@ Check the [live demo here](https://jsfiddle.net/filipetedim/0595783t/) if you di
 * [Bugs and feature requests](#bugs-and-feature-requests)
 * [Contributing](#contributing)
 * [Versioning](#versioning)
+* [Credits and author](#credits-and-author)
 * [License](#license)
 
 ## Getting started
@@ -70,6 +71,12 @@ Feel free to contribute in any way you like. All pull requests will be reviewed 
 Angular-rating is maintained under the [Semantic Versioning guidelines](http://semver.org/).
 
 See the [Releases section of this GitHub project](https://github.com/filipetedim/angular-rating/releases/) for changelogs for each release.
+
+## Credits and author
+
+This project's early development was based on [melloc01](https://github.com/melloc01)'s repository, [angular-input-stars](https://github.com/melloc01/angular-input-stars/). I needed more features from his package and to work in a different way, specifically the feature to add half (decimal) ratings like 2,5. 
+
+So I thought I'd build my own and increase it's feature list like allowing it to be fully customizable, using callbacks on value (rating) change and so on. It has since evolved past [melloc01](https://github.com/melloc01)'s project, but I can't help thanking and crediting him for being my early prototype.
 
 ## License
 
