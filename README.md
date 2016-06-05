@@ -51,7 +51,16 @@ angular.module('yourApp', [
 
 ## Bugs and feature requests
 
+If you found a bug or have a feature request, [please open a new issue](https://github.com/filipetedim/angular-rating/issues/new).
+
+Requested features list:
+* Add Angular's pristine to an attribute
+* Add form validation to an attribute
+* Add attribute for a new custom class to be added
+
 ## Contributing
+
+Feel free to contribute in any way you like. All pull requests will be reviewed and your code will be changed to match this project's [guidelines](https://github.com/filipetedim/angular-rating/blob/master/GUIDELINES.md) should it not follow them, and issues will be answered and resolved as soon as possible.
 
 ## Versioning
 
