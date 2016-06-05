@@ -49,14 +49,17 @@ angular.module('yourApp', [
 
 ## Dependencies
 
+This package uses [FontAwesome](http://fontawesome.io/) as fallback if no class is given to the icons.
+
 ## Bugs and feature requests
 
 If you found a bug or have a feature request, [please open a new issue](https://github.com/filipetedim/angular-rating/issues/new).
 
 Requested features list:
-* Add Angular's pristine to an attribute
-* Add form validation to an attribute
-* Add attribute for a new custom class to be added
+* Add Angular's pristine to an attribute.
+* Add form validation to an attribute.
+* Add attribute for a new custom class to be added.
+* Add MaterializeCSS support.
 
 ## Contributing
 
