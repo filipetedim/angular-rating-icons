@@ -44,7 +44,7 @@ angular.module('yourApp', [
 
 ## How to use
 
-To get it runnig, just add one of the the blocks of HTML code bellow to your view. Don't forget that your model should be an object, as per [the ng-model golden dot rule](http://stackoverflow.com/questions/17606936/angularjs-dot-in-ng-model) to deal with scope inheritance.
+To get it running, just add one of the the blocks of HTML code bellow to your view. Don't forget that your model should be an object, as per [the ng-model golden dot rule](http://stackoverflow.com/questions/17606936/angularjs-dot-in-ng-model), to deal with scope inheritance.
 ```html
 <angular-rating ng-model="YourObject.ratingValue"></angular-rating>
 
@@ -77,6 +77,10 @@ There are a number of possible customizations to this directive. Bellow is a tab
 | color-hover | Color for hovered icons. This attribute has the highest color priority . | String | 'orange' |
 
 ### Customization
+
+You can fully customize the directive by downloading and changing the CSS file in `/src/angular-rating.css`. Be mindful that `decimal` type uses specific CSS to reduce the icons to half and position them properly next to their correspondent half. 
+
+Customizing the CSS is at the risk of malfunction of this directive.
 
 ## Dependencies
 
