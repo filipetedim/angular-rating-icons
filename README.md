@@ -20,10 +20,11 @@ Its best feature? It works with any icon from font-awesome, even if you want it 
 
 ## Getting started
 
-Install the package using Bower:
-```bash
-bower install angular-rating
-```
+There are several ways to install:
+
+* [Download the latest release](https://github.com/filipetedim/angular-rating/archive/master.zip).
+* Install with [Bower](http://bower.io): `bower install angular-rating`.
+* Install with [npm](https://www.npmjs.com): `npm install angular-rating`.
 
 Include the files in your index page:
 ```javascript
