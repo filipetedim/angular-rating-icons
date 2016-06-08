@@ -96,6 +96,7 @@ Requested features list:
 * Add attribute for a new custom class to be added.
 * Add MaterializeCSS support.
 * Add reset functionality.
+* Only execute set value when it's different than the original.
 
 ## Contributing
 
