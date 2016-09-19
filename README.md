@@ -27,10 +27,10 @@ There are several ways to install:
 Include the files in your index page:
 ```javascript
 // CSS
-<link rel="stylesheet" href="angular-rating/dist/angular-rating.min.css">
+<link rel="stylesheet" href="..(your source)../angular-rating/dist/angular-rating.min.css">
 
 // JavaScript
-<script src="angular-rating/dist/angular-rating.min.js">
+<script src="..(your source)../angular-rating/dist/angular-rating.min.js">
 ```
 
 Add the module to your main module's list of dependencies:
@@ -61,7 +61,7 @@ There are a number of possible customizations to this directive. Bellow is a tab
 | Attribute | Description | Type | Default |
 |---|---|---|---|
 | ng-model | (Required) Object  bound to control. | String, Number, Array | - |
-| max | Maximal value. | Integer | 5 |
+| max | Maximum value. | Integer | 5 |
 | default-value | Default value if model is undefined. | Integer | 0 |
 | on-change | Function executed every value change. | Function | - |
 | decimal | Whether or not icons should fill in halves.  | Boolean | false |
@@ -96,6 +96,7 @@ Requested features list:
 * Add attribute for a new custom class to be added.
 * Add MaterializeCSS support.
 * Add reset functionality.
+* Only execute set value when it's different than the original.
 
 ## Contributing
 

@@ -1,0 +1,31 @@
+{
+    "name": "angular-rating",
+    "version": "1.0.0",
+    "description": "Fully customizable AngularJS rating system with decimals and fontawesome",
+    "repository": "filipetedim/angular-rating",
+    "homepage": "https://github.com/filipetedim/angular-rating",
+    "keywords": [
+        "angularjs",
+        "angular",
+        "directive",
+        "input",
+        "stars",
+        "rating",
+        "fontawesome"
+    ],
+    "author": {
+     "name": "Filipe Tedim <filipetedim@gmail.com> (http://filipetedim.com)"
+    },
+    "license": "MIT",
+    "main": "dist/angular-rating.min.js",
+    "files": [
+      "LICENSE",
+      "README.md",
+      "src/",
+      "dist/"
+    ],
+    "dependencies": {
+        "angular": ">=1.4.x <2.x",
+        "font-awesome": "~4.2.0"
+    }
+}
