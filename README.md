@@ -61,7 +61,7 @@ There are a number of possible customizations to this directive. Bellow is a tab
 | Attribute | Description | Type | Default |
 |---|---|---|---|
 | ng-model | (Required) Object  bound to control. | String, Number, Array | - |
-| max | Maximal value. | Integer | 5 |
+| max | Maximum value. | Integer | 5 |
 | default-value | Default value if model is undefined. | Integer | 0 |
 | on-change | Function executed every value change. | Function | - |
 | decimal | Whether or not icons should fill in halves.  | Boolean | false |
