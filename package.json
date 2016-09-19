@@ -2,7 +2,7 @@
     "name": "angular-rating",
     "version": "1.0.0",
     "description": "Fully customizable AngularJS rating system with decimals and fontawesome",
-	  "repository": "filipetedim/angular-rating",
+    "repository": "filipetedim/angular-rating",
     "homepage": "https://github.com/filipetedim/angular-rating",
     "keywords": [
         "angularjs",
