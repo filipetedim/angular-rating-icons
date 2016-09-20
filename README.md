@@ -27,10 +27,10 @@ There are several ways to install:
 Include the files in your index page:
 ```javascript
 // CSS
-<link rel="stylesheet" href="..(your source)../angular-rating-icons/dist/angular-rating-icons.min.css">
+<link type="text/css" rel="stylesheet" href="..(your source)../angular-rating-icons/dist/angular-rating-icons.min.css">
 
 // JavaScript
-<script src="..(your source)../angular-rating-icons/dist/angular-rating-icons.min.js">
+<script src="..(your source)../angular-rating-icons/dist/angular-rating-icons.min.js"></script>
 ```
 
 Add the module to your main module's list of dependencies:
