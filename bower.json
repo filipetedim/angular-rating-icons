@@ -1,8 +1,8 @@
 {
-  "name": "angular-ratings",
+  "name": "angular-rating-icons",
   "version": "1.0.0",
   "description": "Fully customizable AngularJS rating system with decimals and fontawesome",
-  "homepage": "https://github.com/filipetedim/angular-ratings",
+  "homepage": "https://github.com/filipetedim/angular-rating-icons",
   "keywords": [
     "angularjs",
     "angular",
@@ -10,6 +10,9 @@
     "input",
     "stars",
     "rating",
+    "ratings",
+    "icon",
+    "icons",
     "fontawesome"
   ],
   "author": [
@@ -17,7 +20,7 @@
   ],
   "license": "MIT",
   "main": [
-    "dist/angular-ratings.min.js"
+    "dist/angular-rating-icons.min.js"
   ],
   "dependencies": {
     "angular": ">=1.4.0 <2.0"
