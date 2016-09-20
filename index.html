@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Angular-rating-icons by filipetedim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Angular-rating-icons</h1>
+      <h2 class="project-tagline">angular rating system made easy</h2>
+      <a href="https://github.com/filipetedim/angular-rating-icons" class="btn">View on GitHub</a>
+      <a href="https://github.com/filipetedim/angular-rating-icons/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/filipetedim/angular-rating-icons/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="angular-rating-icons" class="anchor" href="#angular-rating-icons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Angular-rating-icons</h1>
+
+<p>The first fully customizable AngularJS rating system that is as easy as it gets.</p>
+
+<p>Its best feature? It works with any icon from font-awesome, even if you want to fill only half of it!</p>
+
+<p>Check the <a href="https://jsfiddle.net/filipetedim/0595783t/">live demo here</a> if you didn't understand!</p>
+
+<h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of contents</h2>
+
+<ul>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#how-to-use">How to use</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#bugs-and-feature-requests">Bugs and feature requests</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#versioning">Versioning</a></li>
+<li><a href="#credits-and-author">Credits and author</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting started</h2>
+
+<p>There are several ways to install:</p>
+
+<ul>
+<li>
+<a href="https://github.com/filipetedim/angular-rating-icons/archive/master.zip">Download the latest release</a>.</li>
+<li>Install with <a href="http://bower.io">Bower</a>: <code>bower install angular-rating-icons</code>.</li>
+<li>Install with <a href="https://www.npmjs.com">npm</a>: <code>npm install angular-rating-icons</code>.</li>
+</ul>
+
+<p>Include the files in your index page:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// CSS</span>
+<span class="pl-k">&lt;</span>link type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> rel<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> href<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>..(your source)../angular-rating-icons/dist/angular-rating-icons.min.css<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+
+<span class="pl-c">// JavaScript</span>
+<span class="pl-k">&lt;</span>script src<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>..(your source)../angular-rating-icons/dist/angular-rating-icons.min.js<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;</span><span class="pl-k">/</span>script<span class="pl-k">&gt;</span></pre></div>
+
+<p>Add the module to your main module's list of dependencies:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">angular</span>.<span class="pl-en">module</span>(<span class="pl-s"><span class="pl-pds">'</span>yourApp<span class="pl-pds">'</span></span>, [
+    <span class="pl-c">// ...</span>
+    <span class="pl-s"><span class="pl-pds">'</span>angular-rating-icons<span class="pl-pds">'</span></span>,
+    <span class="pl-c">// ...</span>
+]);</pre></div>
+
+<h2>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use</h2>
+
+<p>To get it running, just add one of the the blocks of HTML code bellow to your view. Don't forget that your model should be an object, as per <a href="http://stackoverflow.com/questions/17606936/angularjs-dot-in-ng-model">the ng-model golden dot rule</a>, to deal with scope inheritance.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">angular</span><span class="pl-e">-rating-icons</span> <span class="pl-e">ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>YourObject.ratingValue<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">angular</span><span class="pl-e">-rating-icons</span>&gt;
+
+&lt;<span class="pl-ent">div</span> <span class="pl-e">angular-rating-icons</span> <span class="pl-e">ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>YourObject.ratingValue<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+
+<span class="pl-c">&lt;!-- Best practice: This is the most valid HTML code should you use any validation tool. --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">data-angular-rating-icons</span> <span class="pl-e">ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>YourObject.ratingValue<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>
+<a id="attributes" class="anchor" href="#attributes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Attributes</h3>
+
+<p>There are a number of possible customizations to this directive. Bellow is a table with all the latest version attributes and their information.</p>
+
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ng-model</td>
+<td>(Required) Object  bound to control.</td>
+<td>String, Number, Array</td>
+<td>-</td>
+</tr>
+<tr>
+<td>max</td>
+<td>Maximum value.</td>
+<td>Integer</td>
+<td>5</td>
+</tr>
+<tr>
+<td>default-value</td>
+<td>Default value if model is undefined.</td>
+<td>Integer</td>
+<td>0</td>
+</tr>
+<tr>
+<td>on-change</td>
+<td>Function executed every value change.</td>
+<td>Function</td>
+<td>-</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>Whether or not icons should fill in halves.</td>
+<td>Boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>read-only</td>
+<td>Whether or not is readonly.</td>
+<td>Boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>icon-size</td>
+<td>Size of the icons.</td>
+<td>Integer</td>
+<td>20</td>
+</tr>
+<tr>
+<td>icon-spacing</td>
+<td>Spacing in pixels between the icons.</td>
+<td>Integer</td>
+<td>5</td>
+</tr>
+<tr>
+<td>icon-base</td>
+<td>Base class for all icons.</td>
+<td>String</td>
+<td>'fa'</td>
+</tr>
+<tr>
+<td>icon-empty</td>
+<td>Icon class for empty icons.</td>
+<td>String</td>
+<td>'fa-star-o'</td>
+</tr>
+<tr>
+<td>icon-full</td>
+<td>Icon class for selected icons. This attribute has priority over the empty class.</td>
+<td>String</td>
+<td>'fa-star'</td>
+</tr>
+<tr>
+<td>icon-hover</td>
+<td>Icon class for hovered icons. This attribute has the highest class priority.</td>
+<td>String</td>
+<td>'fa-star'</td>
+</tr>
+<tr>
+<td>color-base</td>
+<td>Base color for icons.</td>
+<td>String</td>
+<td>'black'</td>
+</tr>
+<tr>
+<td>color-selected</td>
+<td>Color for selected icons. This attribute has priority over the base color.</td>
+<td>String</td>
+<td>'orange'</td>
+</tr>
+<tr>
+<td>color-hover</td>
+<td>Color for hovered icons. This attribute has the highest color priority .</td>
+<td>String</td>
+<td>'orange'</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="customization" class="anchor" href="#customization" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Customization</h3>
+
+<p>You can fully customize the directive by downloading and changing the CSS file in <code>/src/angular-rating-icons.css</code>. Be mindful that <code>decimal</code> type uses specific code to reduce the icons to half and position them properly next to their correspondent half. </p>
+
+<p>Customizing the CSS is at the risk of visual malfunction of this directive.</p>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p>This package uses <a href="http://fontawesome.io/">FontAwesome</a> as fallback if no class is given to the icons.</p>
+
+<h2>
+<a id="bugs-and-feature-requests" class="anchor" href="#bugs-and-feature-requests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bugs and feature requests</h2>
+
+<p>If you found a bug or have a feature request, <a href="https://github.com/filipetedim/angular-rating-icons/issues/new">please open a new issue</a>.</p>
+
+<p>Requested features list:</p>
+
+<ul>
+<li>Add Angular's pristine to an attribute.</li>
+<li>Add form validation to an attribute.</li>
+<li>Add attribute for a new custom class to be added.</li>
+<li>Add MaterializeCSS support.</li>
+<li>Add reset functionality.</li>
+<li>Only execute set value when it's different than the original.</li>
+</ul>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Feel free to contribute in any way you like. All pull requests will be reviewed and your code will be changed to match this project's <a href="https://github.com/filipetedim/angular-rating-icons/blob/master/GUIDELINES.md">guidelines</a> should it not follow them, and issues will be answered and resolved as soon as possible.</p>
+
+<h2>
+<a id="versioning" class="anchor" href="#versioning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Versioning</h2>
+
+<p>Angular-rating-icons is maintained under the <a href="http://semver.org/">Semantic Versioning guidelines</a>.</p>
+
+<p>See the <a href="https://github.com/filipetedim/angular-rating-icons/releases/">Releases section of this GitHub project</a> for changelogs for each release.</p>
+
+<h2>
+<a id="credits-and-author" class="anchor" href="#credits-and-author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits and author</h2>
+
+<p>This project's early development was based on <a href="https://github.com/melloc01">melloc01</a>'s repository, <a href="https://github.com/melloc01/angular-input-stars/">angular-input-stars</a>. I needed more features from his package and to work in a different way, specifically the feature to add half (decimal) ratings like 2,5. </p>
+
+<p>So I thought I'd build my own and increase it's feature list like allowing it to be fully customizable, using callbacks on value (rating) change and so on. It has since evolved past <a href="https://github.com/melloc01">melloc01</a>'s project, but I can't help thanking and crediting him for being my early prototype.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>Code and documentation copyright 2016 filipetedim © Filipe Tedim. Code released under <a href="https://github.com/filipetedim/angular-rating-icons/blob/master/LICENSE">the MIT license</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/filipetedim/angular-rating-icons">Angular-rating-icons</a> is maintained by <a href="https://github.com/filipetedim">filipetedim</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
