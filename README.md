@@ -1,4 +1,4 @@
-# Angular-rating
+# Angular-ratings
 The first fully customizable AngularJS rating system that is as easy as it gets.
 
 Its best feature? It works with any icon from font-awesome, even if you want to fill only half of it!
