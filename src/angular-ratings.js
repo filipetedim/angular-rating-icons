@@ -1,5 +1,5 @@
-angular.module('angular-rating', [])
-    .directive('angularRating', function() {
+angular.module('angular-ratings', [])
+    .directive('angularRatings', function() {
         return {
             replace: true,
             require: 'ngModel',
@@ -25,9 +25,9 @@ angular.module('angular-rating', [])
                 scope.value = controller.$viewValue || (+attrs.defaultValue || 0);
                 scope.size = +attrs.iconSize || 20;
                 scope.spacing = +attrs.iconSpacing || 5;
-                scope.listClass = 'angular-rating-icons';
+                scope.listClass = 'angular-ratings-icons';
                 scope.readOnly = !(attrs.readonly === undefined);
-                scope.decimal = !(attrs.decimal === undefined) ? 'angular-rating-icons-decimal' : undefined;
+                scope.decimal = !(attrs.decimal === undefined) ? 'angular-ratings-icons-decimal' : undefined;
 
                 // Colors
                 var colorBase = attrs.colorBase || 'black';
