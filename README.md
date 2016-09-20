@@ -1,4 +1,4 @@
-# Angular-ratings
+# Angular-rating-icons
 The first fully customizable AngularJS rating system that is as easy as it gets.
 
 Its best feature? It works with any icon from font-awesome, even if you want to fill only half of it!
@@ -20,24 +20,24 @@ Check the [live demo here](https://jsfiddle.net/filipetedim/0595783t/) if you di
 
 There are several ways to install:
 
-* [Download the latest release](https://github.com/filipetedim/angular-ratings/archive/master.zip).
-* Install with [Bower](http://bower.io): `bower install angular-ratings`.
-* Install with [npm](https://www.npmjs.com): `npm install angular-ratings`.
+* [Download the latest release](https://github.com/filipetedim/angular-rating-icons/archive/master.zip).
+* Install with [Bower](http://bower.io): `bower install angular-rating-icons`.
+* Install with [npm](https://www.npmjs.com): `npm install angular-rating-icons`.
 
 Include the files in your index page:
 ```javascript
 // CSS
-<link rel="stylesheet" href="..(your source)../angular-ratings/dist/angular-ratings.min.css">
+<link rel="stylesheet" href="..(your source)../angular-rating-icons/dist/angular-rating-icons.min.css">
 
 // JavaScript
-<script src="..(your source)../angular-ratings/dist/angular-ratings.min.js">
+<script src="..(your source)../angular-rating-icons/dist/angular-rating-icons.min.js">
 ```
 
 Add the module to your main module's list of dependencies:
 ```javascript
 angular.module('yourApp', [
 	// ...
-	'angular-ratings',
+	'angular-rating-icons',
 	// ...
 ]);
 ```
@@ -46,12 +46,12 @@ angular.module('yourApp', [
 
 To get it running, just add one of the the blocks of HTML code bellow to your view. Don't forget that your model should be an object, as per [the ng-model golden dot rule](http://stackoverflow.com/questions/17606936/angularjs-dot-in-ng-model), to deal with scope inheritance.
 ```html
-<angular-ratings ng-model="YourObject.ratingValue"></angular-ratings>
+<angular-rating-icons ng-model="YourObject.ratingValue"></angular-rating-icons>
 
-<div angular-ratings ng-model="YourObject.ratingValue"></div>
+<div angular-rating-icons ng-model="YourObject.ratingValue"></div>
 
 <!-- Best practice: This is the most valid HTML code should you use any validation tool. -->
-<div data-angular-ratings ng-model="YourObject.ratingValue"></div>
+<div data-angular-rating-icons ng-model="YourObject.ratingValue"></div>
 ```
 
 ### Attributes
@@ -78,7 +78,7 @@ There are a number of possible customizations to this directive. Bellow is a tab
 
 ### Customization
 
-You can fully customize the directive by downloading and changing the CSS file in `/src/angular-ratings.css`. Be mindful that `decimal` type uses specific code to reduce the icons to half and position them properly next to their correspondent half. 
+You can fully customize the directive by downloading and changing the CSS file in `/src/angular-rating-icons.css`. Be mindful that `decimal` type uses specific code to reduce the icons to half and position them properly next to their correspondent half. 
 
 Customizing the CSS is at the risk of visual malfunction of this directive.
 
@@ -88,7 +88,7 @@ This package uses [FontAwesome](http://fontawesome.io/) as fallback if no class 
 
 ## Bugs and feature requests
 
-If you found a bug or have a feature request, [please open a new issue](https://github.com/filipetedim/angular-ratings/issues/new).
+If you found a bug or have a feature request, [please open a new issue](https://github.com/filipetedim/angular-rating-icons/issues/new).
 
 Requested features list:
 * Add Angular's pristine to an attribute.
@@ -100,13 +100,13 @@ Requested features list:
 
 ## Contributing
 
-Feel free to contribute in any way you like. All pull requests will be reviewed and your code will be changed to match this project's [guidelines](https://github.com/filipetedim/angular-ratings/blob/master/GUIDELINES.md) should it not follow them, and issues will be answered and resolved as soon as possible.
+Feel free to contribute in any way you like. All pull requests will be reviewed and your code will be changed to match this project's [guidelines](https://github.com/filipetedim/angular-rating-icons/blob/master/GUIDELINES.md) should it not follow them, and issues will be answered and resolved as soon as possible.
 
 ## Versioning
 
-Angular-ratings is maintained under the [Semantic Versioning guidelines](http://semver.org/).
+Angular-rating-icons is maintained under the [Semantic Versioning guidelines](http://semver.org/).
 
-See the [Releases section of this GitHub project](https://github.com/filipetedim/angular-ratings/releases/) for changelogs for each release.
+See the [Releases section of this GitHub project](https://github.com/filipetedim/angular-rating-icons/releases/) for changelogs for each release.
 
 ## Credits and author
 
@@ -116,4 +116,4 @@ So I thought I'd build my own and increase it's feature list like allowing it to
 
 ## License
 
-Code and documentation copyright 2016 filipetedim © Filipe Tedim. Code released under [the MIT license](https://github.com/filipetedim/angular-ratings/blob/master/LICENSE).
+Code and documentation copyright 2016 filipetedim © Filipe Tedim. Code released under [the MIT license](https://github.com/filipetedim/angular-rating-icons/blob/master/LICENSE).
