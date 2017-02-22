@@ -1,5 +1,5 @@
 angular.module('angular-rating-icons', [])
-    .directive('angularRatingIcons', function() {
+    .directive('angularRatingIcons', function () {
         return {
             replace: true,
             require: 'ngModel',
@@ -19,7 +19,7 @@ angular.module('angular-rating-icons', [])
                 '</li>' +
                 '</ul>',
 
-            link: function(scope, element, attrs, controller) {
+            link: function (scope, element, attrs, controller) {
                 // Settings
                 scope.icons = new Array(+attrs.max || 5);
                 scope.value = controller.$viewValue || (+attrs.defaultValue || 0);
@@ -41,11 +41,11 @@ angular.module('angular-rating-icons', [])
                 var iconHover = attrs.iconHover || 'fa-star';
 
                 // Model
-                controller.$render = function() {
-            scope.value = controller.$viewValue === 0 ? 0 : controller.$viewValue || scope.value;
+                controller.$render = function () {
+                    scope.value = controller.$viewValue === 0 ? 0 : controller.$viewValue || scope.value;
 
-            // update model safeguard/fallback should it not be initialized before
-            controller.$setViewValue(scope.value);
+                    // update model safeguard/fallback should it not be initialized before
+                    controller.$setViewValue(scope.value);
                 };
 
                 /**
@@ -56,7 +56,7 @@ angular.module('angular-rating-icons', [])
                  * @param {int} index - the icon's index
                  * @return {string} - the icon class to use
                  */
-                scope.getClass = function(index) {
+                scope.getClass = function (index) {
                     return iconBase + ' ' + (index >= scope.value ? iconEmpty : iconFull);
                 };
 
@@ -69,7 +69,7 @@ angular.module('angular-rating-icons', [])
                  * @param {int} index - the icon's index
                  * @return {Object} - the icon style to use
                  */
-                scope.getIconStyle = function(index) {
+                scope.getIconStyle = function (index) {
                     var css = {
                         color: index >= scope.value ? colorBase : colorSelected
                     };
@@ -93,7 +93,7 @@ angular.module('angular-rating-icons', [])
                  * @param {int} index - the list item's index
                  * @return {object} - the list item's style to use
                  */
-                scope.getListItemStyle = function(index) {
+                scope.getListItemStyle = function (index) {
                     var css = {
                         'font-size': scope.size + 'px',
                         'padding-right': index !== scope.icons.length - 1 ? scope.spacing + 'px' : '0'
@@ -118,24 +118,24 @@ angular.module('angular-rating-icons', [])
                  * Sets the directive's scope value to the clicked icon plus 1.
                  * List item's indexes go from 0 to 9, whilst real values should go from 1 to 10.
                  * Sets the model's value to the directive's scope value.
-           * Runs the onChangeFunction function.
+                 * Runs the onChangeFunction function.
                  *
                  * @param {int} index - the clicked icon's index
                  */
-                scope.setValue = function(index) {
+                scope.setValue = function (index) {
                     if (scope.readOnly) {
                         return;
                     }
 
                     controller.$setViewValue(scope.value = index + 1);
-            scope.onChangeFunction();
+                    scope.onChangeFunction();
                 };
 
                 /**
                  * Runs the paintIcon function to paint the icons only up to the current scope value - 1,
                  * since the indexes range from 0 to 9 but the real values range from 1 to 10.
                  */
-                scope.resetIcons = function() {
+                scope.resetIcons = function () {
                     scope.paintIcons(scope.value - 1, true);
                 };
 
@@ -150,7 +150,7 @@ angular.module('angular-rating-icons', [])
                  * @param {int} index - the clicked icon's index
                  * @param {boolean} reset - if icon's paint should be reset
                  */
-                scope.paintIcons = function(index, reset) {
+                scope.paintIcons = function (index, reset) {
                     if (scope.readOnly) {
                         return;
                     }
