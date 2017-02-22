@@ -107,7 +107,7 @@ angular.module('angular-rating-icons', [])
                     css.width = (scope.size - 2) / 2 + 'px';
 
                     if (!(index % 2)) {
-              css['padding-right'] = '0';
+                        css['padding-right'] = '0';
                     }
 
                     return css;
