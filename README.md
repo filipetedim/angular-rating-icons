@@ -65,7 +65,7 @@ There are a number of possible customizations to this directive. Bellow is a tab
 | default-value | Default value if model is undefined. | Integer | 0 |
 | on-change | Function executed every value change. | Function | - |
 | decimal | Whether or not icons should fill in halves.  | Boolean | false |
-| read-only | Whether or not is readonly. | Boolean | false |
+| readonly | Whether or not is readonly. | Boolean | false |
 | icon-size | Size of the icons. | Integer | 20 |
 | icon-spacing | Spacing in pixels between the icons. | Integer | 5 |
 | icon-base | Base class for all icons. | String | 'fa' |
