@@ -16,7 +16,7 @@ Check the [live demo here](https://jsfiddle.net/filipetedim/0595783t/) if you di
 * [Credits and author](#credits-and-author)
 * [License](#license)
 
-## Getting started
+## Getting (started)
 
 There are several ways to install:
 
@@ -86,7 +86,7 @@ Customizing the CSS is at the risk of visual malfunction of this directive.
 
 This package uses [FontAwesome](http://fontawesome.io/) as fallback if no class is given to the icons.
 
-## Bugs and feature requests
+## Bugs (and feature requests)
 
 If you found a bug or have a feature request, [please open a new issue](https://github.com/filipetedim/angular-rating-icons/issues/new).
 
